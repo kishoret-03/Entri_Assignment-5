@@ -1,0 +1,250 @@
+body {
+    background: linear-gradient(-45deg, #f8ffae, #43cea2, #185a9d, #f8ffae);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #0056b3;
+}
+
+
+.navbar {
+    background: linear-gradient(90deg, #343a40 0%, #23272b 100%);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.navbar-brand {
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+.nav-link {
+    color: #ddd !important;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+.nav-link:hover {
+    color: #fff !important;
+}
+
+
+
+.hero {
+
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8), 0 0 2px #000;
+}
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+.about-section {
+    background: #fff;
+    padding: 60px 0;
+}
+.about-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+.about-section p {
+    font-size: 1.15rem;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+.card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+.card-title {
+    font-weight: 600;
+    color: #007bff;
+}
+.card-text {
+    color: #444;
+}
+
+.project-marquee {
+    animation: marquee-left 30s linear infinite;
+}
+@keyframes marquee-left {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+@keyframes marquee-right {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+@media (max-width: 767px) {
+    .project-marquee {
+        animation-duration: 60s;
+    }
+}
+.text-shadow {
+    text-shadow: 1px 2px 8px rgba(0,0,0,0.15), 0 1px 0 #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.text-shadow-sm {
+    text-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+
+
+.btn-custom {
+    background: linear-gradient(90deg, #007bff 0%, #6610f2 100%);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.6rem 1.8rem;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+.btn-custom:hover {
+    background: linear-gradient(90deg, #6610f2 0%, #007bff 100%);
+    color: #fff;
+}
+#contact {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+    margin-bottom: 40px;
+}
+#contact h2 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #22223b;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+#contact form {
+    background: rgba(255,255,255,0.95);
+    border-radius: 18px;
+    padding: 2.5rem 2rem 2rem 2rem;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+    transition: box-shadow 0.3s;
+}
+#contact form:focus-within {
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+}
+#contact .form-label {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    color: #3a3a40;
+    letter-spacing: 0.5px;
+}
+#contact .form-control, #contact textarea.form-control {
+    border-radius: 12px;
+    border: 1.5px solid #bfc9d9;
+    background: #f7fafd;
+    font-size: 1.08rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(44, 62, 80, 0.04);
+}
+#contact .form-control:focus, #contact textarea.form-control:focus {
+    border-color: #4f8cff;
+    box-shadow: 0 0 0 0.2rem rgba(79, 140, 255, 0.15);
+    background: #fff;
+}
+#contact .btn-primary {
+    background: linear-gradient(90deg, #4f8cff 0%, #6a82fb 100%);
+    border: none;
+    border-radius: 12px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(79, 140, 255, 0.12);
+    transition: background 0.2s, transform 0.2s;
+}
+#contact .btn-primary:hover, #contact .btn-primary:focus {
+    background: linear-gradient(90deg, #6a82fb 0%, #4f8cff 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+#contact .btn-secondary {
+    border-radius: 12px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+    background: #e0e7ef;
+    color: #22223b;
+    border: none;
+    transition: background 0.2s, color 0.2s;
+}
+#contact .btn-secondary:hover, #contact .btn-secondary:focus {
+    background: #bfc9d9;
+    color: #22223b;
+}
+#contact .btn-secondary:active {
+    background: #a0aec0;
+    color: #fff;
+}
+#contact .form-check-label {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    color: #3a3a40;
+    letter-spacing: 0.5px;
+
+}
+
+.footer {
+    background: #343a40;
+    color: #bbb;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 40px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .about-section h2 {
+        font-size: 1.7rem;
+    }
+    .navbar {
+        padding: 1rem;
+    }
+    #contact form {
+        padding: 1.2rem 0.7rem 1.5rem 0.7rem;
+    }
+    #contact h2 {
+        font-size: 2rem;
+    }
+    
+    #skills-marquee {
+           animation-duration: 32s;
+        }
+     
+}
